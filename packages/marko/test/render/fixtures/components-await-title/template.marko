@@ -1,0 +1,15 @@
+import Layout from "./layout.marko"
+import { promiseProvider } from "../../../__util__/async-helpers";
+
+$ var userPromise = promiseProvider(1, { name: "Frank" });
+
+<${Layout}>
+    <@title>
+        <await(userPromise)>
+            <@then|user|>Welcome ${user.name}</@then>
+        </await>
+    </@title>
+    <@body>
+        <hello/>
+    </@body>
+</>

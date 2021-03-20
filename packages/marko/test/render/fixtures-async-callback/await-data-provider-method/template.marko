@@ -1,0 +1,15 @@
+import { promiseProvider } from "../../../__util__/async-helpers";
+
+static var dataProvider = {
+    user: {
+        name: "Frank"
+    },
+
+    getUserInfo() {
+        return promiseProvider(1, this.user);
+    }
+};
+
+<await(dataProvider["getUserInfo"].bind(dataProvider))>
+    <@then|user|>Hello ${user.name}!</@then>
+</await>

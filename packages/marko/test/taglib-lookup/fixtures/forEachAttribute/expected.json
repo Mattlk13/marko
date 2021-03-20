@@ -1,0 +1,12 @@
+[
+    "name",
+    "age",
+    "foo-on-*",
+    "key",
+    "no-update",
+    "no-update-body",
+    "no-update-if",
+    "no-update-body-if",
+    "on*",
+    "once*"
+]

@@ -1,0 +1,18 @@
+<test|data| class=input.class>
+  Hello ${data.name}
+</test>
+<div>
+  Hello ${input.name}
+  <span>
+    $ () => {
+      data;
+      const data = "foo";
+      console.log(data);
+    };
+    Hello ${input}
+  </span>
+  <if(true)>
+    $ const data = "bar";
+    Hello ${data}
+  </if>
+</div>

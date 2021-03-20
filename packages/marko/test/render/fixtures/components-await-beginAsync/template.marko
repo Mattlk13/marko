@@ -1,0 +1,19 @@
+import { promiseProvider } from "../../../__util__/async-helpers";
+
+<html>
+    <body>
+        <await(promiseProvider(1)) name="inner">
+            <@then|user|>
+                <div.inner>
+                    <beginAsync>
+                        <div.inner-inner>
+                            <hello name="inner-inner"/>
+                        </div>
+                    </beginAsync>
+                    <hello name="inner"/>
+                </div>
+            </@then>
+        </await>
+        <hello name="outer"/>
+    </body>
+</html>

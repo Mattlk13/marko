@@ -1,0 +1,16 @@
+<div class="foo">
+    <app-bar key="bar"/>
+    <app-bar key="bar2"/>
+    <app-bar key="barArray[]" label="1"/>
+    <app-bar key="barArray[]" label="2"/>
+    <app-custom-events onTestEvent("handleTestEvent1") key="customEvents"/>
+    <app-custom-events
+        onTestEvent("handleTestEvent2")
+        channel=`customEvents-${component.id}`/>
+    <ul>
+        <for|color| of=["red", "green", "blue"]>
+            <li key="colorListItems[]">${color}</li>
+        </for>
+    </ul>
+    <span class="config" key="config"/>
+</div>

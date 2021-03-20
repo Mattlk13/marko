@@ -1,0 +1,5 @@
+{
+  "<test-home>": {
+    "renderer": "./test-home-renderer"
+  }
+}

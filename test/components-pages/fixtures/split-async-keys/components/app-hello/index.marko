@@ -1,7 +1,0 @@
-$ var promise = new Promise(resolve => setTimeout(resolve, 100));
-<await(promise) client-reorder>
-    <@then>
-        <div key="div"/>
-        <app-child key="child"/>
-    </@then>
-</await>
